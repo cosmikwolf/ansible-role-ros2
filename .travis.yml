@@ -20,10 +20,13 @@ env:
   - distribution: ubuntu
     version: focal
     ros2_distro: foxy
+  - distribution: ubuntu
+    version: focal
+    ros2_distro: humble
 
 jobs:
   allow_failures: # https://github.com/ansible/ansible/issues/68645
-    - env: 
+    - env:
       - distribution: ubuntu
         version: focal
         ros2_distro: foxy
